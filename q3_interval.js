@@ -20,3 +20,18 @@ function myClearInterval(id) {
         delete timers[id];
     }
 }
+
+
+
+// To Check
+
+// let count = 0;
+// const id = mySetInterval(()=> {
+//     count++;
+//     console.log(`Interval Tick : ${count}`);
+
+//     if (count === 3) {
+//         myClearInterval(id);
+//         console.log("Interval Cleared")
+//     }
+// }, 1000);

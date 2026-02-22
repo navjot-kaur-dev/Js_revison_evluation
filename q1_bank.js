@@ -26,3 +26,16 @@ function createBankAccount (initialBalance) {
         }
     };
 }
+
+
+
+
+// // To Check 
+// const myAccount = createBankAccount(100);
+// console.log(myAccount.deposit(50));
+
+// console.log(myAccount.withdraw(200));
+
+// console.log(myAccount.getBalance());
+
+// console.table(myAccount.getTransactionHistory());
