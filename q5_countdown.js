@@ -32,4 +32,20 @@ function createCountdown(seconds, onTick, onComplete) {
 }
 
 // To Check 
+const timer = createCountdown(
+    5, 
+    (time) => console.log(`Time left ${time}`),
+    () => console.log("Boom ! Countdown finished.")
+);
 
+timer.start();
+
+setTimeout(()=> {
+    console.log("---Pausing---");
+    timer.pause();
+    setTimeout(() => {
+        console.log("---Resuming---");
+        timer.resume();
+
+    }, 2000);
+},2000);
